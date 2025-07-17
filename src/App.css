@@ -1,0 +1,186 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Google-style sharp design */
+.sharp-card {
+  border: 2px solid #dadce0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+  background: white;
+}
+
+.sharp-card:hover {
+  border-color: #4285f4;
+  box-shadow: 0 2px 8px rgba(60, 64, 67, 0.15);
+}
+
+.sharp-button {
+  border: 2px solid #4285f4;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  transition: all 0.2s;
+}
+
+.sharp-button:hover {
+  background-color: #4285f4;
+  color: white;
+}
+
+.sharp-input {
+  border: 2px solid #dadce0;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sharp-input:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+}
+
+.text-sharp {
+  font-weight: 500;
+  color: #202124;
+}
+
+.text-sharp-secondary {
+  font-weight: 400;
+  color: #5f6368;
+}
+
+/* Progress bars */
+.progress-bar {
+  height: 8px;
+  background-color: #e8eaed;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #dadce0;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Status badges */
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-todo {
+  background-color: #fef7ff;
+  color: #8e24aa;
+  border-color: #ce93d8;
+}
+
+.status-progress {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  border-color: #90caf9;
+}
+
+.status-review {
+  background-color: #fff3e0;
+  color: #f57c00;
+  border-color: #ffcc02;
+}
+
+.status-done {
+  background-color: #e8f5e8;
+  color: #388e3c;
+  border-color: #81c784;
+}
+
+/* Avatar styles */
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #dadce0;
+  object-fit: cover;
+}
+
+.avatar-large {
+  width: 48px;
+  height: 48px;
+}
+
+/* Navigation */
+.nav-link {
+  font-weight: 500;
+  color: #5f6368;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #f1f3f4;
+  color: #202124;
+}
+
+.nav-link.active {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+  font-weight: 600;
+}
+
+/* Responsive grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation utilities */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f3f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bdc1c6;
+}
